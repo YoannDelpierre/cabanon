@@ -1,0 +1,34 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.layout == 'front' %}
+        <meta name="description" content="Cabanon des Cerises, maison de vacances située à Bedoin au pied du Mont Ventoux">
+        <meta name="keywords" content="location vacances Bedoin, locations vacances Bedoin, location Bedoin, locations saisonnieres Bedoin, annonces Bedoin, vacances Bedoin, locations Bedoin, location maison Bedoin, particulier, villas Bedoin, montagne, maisons Bedoin, sejour, voyage, Bedoin, Vaucluse, Provence-Alpes-Cote d'Azur, Bedoin, France, a proximite de Bedoin, piscine, jardin, paca, 84, Recherche locations vacances Bedoin, Ventoux, Mont Ventoux, Montventoux, Le Grand Chauve"/>
+        <title>Cabanon des Cerises - Location de vacances au pied du Mont Ventoux</title>
+    {% endif %}
+
+    {% if page.layout == 'maison' %}
+        <title>Découvrez le Cabanon des Cerises</title>
+    {% endif %}
+
+    {% if page.layout == 'reservation' %}
+        <title>Réservez le Cabanon des Cerises</title>
+    {% endif %}
+    <link rel="preload" as="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="preload" as="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="preload" as="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="preload" as="stylesheet" href="css/main.css" type="text/css">
+
+    <script rel="preload" as="script" src="js/jquery.js"></script>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+</head>

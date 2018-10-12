@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "build": "JEKYLL_ENV=production bundle exec jekyll build",
+        "deploy-now": "npm run build && cd ~/projects/cabanon/_site && now --public",
+        "start": "bundle exec jekyll serve"
+    }
+}
