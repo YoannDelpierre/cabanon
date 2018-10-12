@@ -12,3 +12,6 @@ markdown: kramdown
 exclude:
   - "*.json"
   - "Gemfile"
+
+sass:
+  style: compressed
