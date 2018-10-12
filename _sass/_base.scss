@@ -162,15 +162,14 @@ header {
         width: 100%;
         .header-content-inner {
             padding: 10px;
-            background: rgba(white, .7);
-            border-color: rgba(white, .5);
             border-radius: 5px;
             h1 {
                 font-weight: 700;
+                font-size: 40px;
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
-                color: rgba(black, .65);
+                color: $theme-primary;
             }
             hr {
                 margin: 15px auto;
@@ -184,13 +183,10 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
+        min-height: 60%;
         .header-content {
             position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            bottom: 0;
             padding: 0 50px;
             .header-content-inner {
                 max-width: 1000px;
