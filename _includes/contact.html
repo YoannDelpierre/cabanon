@@ -7,6 +7,28 @@
         </div>
         <br>
         <div class="row">
+            {% if page.layout != 'front' %}
+            <div class="col-lg-4 col-sm-4 col-md-4 text-center">
+                <a href="https://www.facebook.com/{{ site.facebook }}">
+                    <i class="fa fa-facebook-official fa-2x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>{{ site.instagram }}</p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4 text-center">
+                <a href="https://www.instagram.com/{{ site.instagram }}">
+                    <i class="fa fa-instagram fa-2x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>{{ site.instagram }}</p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4 text-center">
+                <a href="mailto:{{ site.email }}">
+                <i class="fa fa-envelope-square fa-2x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>{{ site.email }}</p>
+                </a>
+            </div>
+            {% endif %}
+
+            {% if page.layout == 'front' %}
             <div class="col-lg-3 col-sm-3 col-md-3 text-center">
                 <a href="https://www.facebook.com/{{ site.facebook }}">
                     <i class="fa fa-facebook-official fa-2x wow bounceIn" data-wow-delay=".1s"></i>
@@ -25,10 +47,10 @@
                     <p>{{ site.email }}</p>
                 </a>
             </div>
-
             <div class="col-lg-3 col-sm-3 col-md-3 text-center">
                 <div data-key="343333"><a href="https://www.vivaweek.com" target="_blank"><img src="https://www.vivaweek.com/img/viva-images/logo-vivaweek-h-pdf.png" alt="Logo de Vivaweek" width="50%" /></a><br/><a href="https://www.vivaweek.com/fr/location-vacances/343333" style="color:#1cb7bd;" target="_blank">Cabanon des cerises...</a></div>
             </div>
+            {% endif %}
         </div>
     </div>
 </section>
